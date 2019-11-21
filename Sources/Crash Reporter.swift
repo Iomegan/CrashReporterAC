@@ -30,7 +30,7 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
         Bundle.main.loadNibNamed(NSNib.Name("Crash Reporter View"), owner: self, topLevelObjects: nil)
     }
     
-    var userConfirmationHandler: MSUserConfirmationHandler {
+    public var userConfirmationHandler: MSUserConfirmationHandler {
         return { (errorReports: [MSErrorReport]) in
             
             let defaults = UserDefaults.standard
