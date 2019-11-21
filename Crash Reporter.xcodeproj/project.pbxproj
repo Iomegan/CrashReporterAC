@@ -10,15 +10,25 @@
 		D1298331238581450059EE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1298330238581450059EE1E /* AppDelegate.swift */; };
 		D1298333238581460059EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1298332238581460059EE1E /* Assets.xcassets */; };
 		D1298336238581460059EE1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1298334238581460059EE1E /* MainMenu.xib */; };
+		D129833F2385815D0059EE1E /* Crash Reporter View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D129833E2385815D0059EE1E /* Crash Reporter View.xib */; };
+		D1298341238581670059EE1E /* Crash Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1298340238581670059EE1E /* Crash Reporter.swift */; };
+		F74C255F3240D9B8CD52A424 /* Pods_Crash_Reporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C96F044CC1DBA7C215A04A5 /* Pods_Crash_Reporter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2369FB99AAE1CA1EA1CC5288 /* Pods-Crash Reporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash Reporter.release.xcconfig"; path = "Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter.release.xcconfig"; sourceTree = "<group>"; };
+		7C96F044CC1DBA7C215A04A5 /* Pods_Crash_Reporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_Reporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7E1EDCAEC1D955D1B1D1F8F /* Pods-Crash Reporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash Reporter.debug.xcconfig"; path = "Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter.debug.xcconfig"; sourceTree = "<group>"; };
 		D129832D238581450059EE1E /* Crash Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crash Reporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1298330238581450059EE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1298332238581460059EE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1298335238581460059EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D1298337238581460059EE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D1298338238581460059EE1E /* Crash_Reporter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Crash_Reporter.entitlements; sourceTree = "<group>"; };
+		D129833E2385815D0059EE1E /* Crash Reporter View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Crash Reporter View.xib"; sourceTree = "<group>"; };
+		D1298340238581670059EE1E /* Crash Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crash Reporter.swift"; sourceTree = "<group>"; };
+		D19805F7238695D7003D6318 /* CrashReporter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CrashReporter.podspec; sourceTree = "<group>"; };
+		D19805F823869867003D6318 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D19805F923869867003D6318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74C255F3240D9B8CD52A424 /* Pods_Crash_Reporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +46,14 @@
 		D1298324238581450059EE1E = {
 			isa = PBXGroup;
 			children = (
-				D129832F238581450059EE1E /* Crash Reporter */,
+				D19805F823869867003D6318 /* LICENSE */,
+				D19805F923869867003D6318 /* README.md */,
+				D19805F7238695D7003D6318 /* CrashReporter.podspec */,
+				D129834423858C400059EE1E /* Sources */,
+				D129832F238581450059EE1E /* Crash Reporter Test App */,
 				D129832E238581450059EE1E /* Products */,
+				E2C15B349D039AE63F552FE6 /* Pods */,
+				DF019ED3337CE85D1211E0E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,16 +65,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D129832F238581450059EE1E /* Crash Reporter */ = {
+		D129832F238581450059EE1E /* Crash Reporter Test App */ = {
 			isa = PBXGroup;
 			children = (
 				D1298330238581450059EE1E /* AppDelegate.swift */,
 				D1298332238581460059EE1E /* Assets.xcassets */,
 				D1298334238581460059EE1E /* MainMenu.xib */,
 				D1298337238581460059EE1E /* Info.plist */,
-				D1298338238581460059EE1E /* Crash_Reporter.entitlements */,
 			);
-			path = "Crash Reporter";
+			path = "Crash Reporter Test App";
+			sourceTree = "<group>";
+		};
+		D129834423858C400059EE1E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D1298340238581670059EE1E /* Crash Reporter.swift */,
+				D129833E2385815D0059EE1E /* Crash Reporter View.xib */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DF019ED3337CE85D1211E0E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C96F044CC1DBA7C215A04A5 /* Pods_Crash_Reporter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2C15B349D039AE63F552FE6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7E1EDCAEC1D955D1B1D1F8F /* Pods-Crash Reporter.debug.xcconfig */,
+				2369FB99AAE1CA1EA1CC5288 /* Pods-Crash Reporter.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,6 +109,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D129833B238581460059EE1E /* Build configuration list for PBXNativeTarget "Crash Reporter" */;
 			buildPhases = (
+				AFB5910446BDB7BF796BDA26 /* [CP] Check Pods Manifest.lock */,
 				D1298329238581450059EE1E /* Sources */,
 				D129832A238581450059EE1E /* Frameworks */,
 				D129832B238581450059EE1E /* Resources */,
@@ -119,11 +162,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1298333238581460059EE1E /* Assets.xcassets in Resources */,
+				D129833F2385815D0059EE1E /* Crash Reporter View.xib in Resources */,
 				D1298336238581460059EE1E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFB5910446BDB7BF796BDA26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Crash Reporter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1298329238581450059EE1E /* Sources */ = {
@@ -131,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1298331238581450059EE1E /* AppDelegate.swift in Sources */,
+				D1298341238581670059EE1E /* Crash Reporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +268,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -263,40 +333,48 @@
 		};
 		D129833C238581460059EE1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E1EDCAEC1D955D1B1D1F8F /* Pods-Crash Reporter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Crash Reporter/Crash_Reporter.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GH2Y99U35Z;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Crash Reporter/Info.plist";
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Crash Reporter Test App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.witt-software.Crash-Reporter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		D129833D238581460059EE1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2369FB99AAE1CA1EA1CC5288 /* Pods-Crash Reporter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Crash Reporter/Crash_Reporter.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GH2Y99U35Z;
-				ENABLE_HARDENED_RUNTIME = YES;
-				INFOPLIST_FILE = "Crash Reporter/Info.plist";
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/Crash Reporter Test App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.witt-software.Crash-Reporter";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
