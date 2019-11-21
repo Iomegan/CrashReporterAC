@@ -10,8 +10,9 @@ Pod::Spec.new do |s|
   s.author          = { "Daniel Witt" => "info@witt-software.com" }
   s.platform        = :osx, "10.10"
   s.source          = { :git => "https://github.com/Iomegan/CrashReporterAC.git", :tag => "0.1.0" }
-  s.source_files    = 'Sources/*.{h,m}'
+  s.source_files    = 'Sources/*.{swift}'
   s.resources       = "Sources/*.{xib}"
   s.dependency        'AppCenter/Crashes'
   s.requires_arc    = true
+  s.static_framework = true
 end

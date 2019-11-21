@@ -1,0 +1,6 @@
+module CrashReporterAC {
+  umbrella header "CrashReporterAC-umbrella.h"
+
+  export *
+  module * { export * }
+}

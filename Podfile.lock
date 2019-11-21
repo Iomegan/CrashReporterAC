@@ -1,0 +1,26 @@
+PODS:
+  - AppCenter/Core (2.5.1)
+  - AppCenter/Crashes (2.5.1):
+    - AppCenter/Core
+  - CrashReporterAC (0.1.0):
+    - AppCenter/Crashes
+
+DEPENDENCIES:
+  - AppCenter/Crashes
+  - CrashReporterAC (from `../Crash Reporter`)
+
+SPEC REPOS:
+  trunk:
+    - AppCenter
+
+EXTERNAL SOURCES:
+  CrashReporterAC:
+    :path: "../Crash Reporter"
+
+SPEC CHECKSUMS:
+  AppCenter: fddcbac6e4baae3d93a196ceb0bfe0e4ce407dec
+  CrashReporterAC: d15e4657bb816445f3c2d0d1e4f0adf39bff15e1
+
+PODFILE CHECKSUM: 0aa2c3d2d5cb2998ec25c016a3eee769ea5cef2e
+
+COCOAPODS: 1.8.4

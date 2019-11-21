@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D0944D0DEFF9CDF0CBE6D4A41B195020 /* Build configuration list for PBXAggregateTarget "AppCenter" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = AppCenter;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		979405BE5B88A0ED1DD5D5A5CB67690A /* CrashReporterAC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 701DC8D0045AC888A52A5B94B92AEF32 /* CrashReporterAC-dummy.m */; };
+		AA2293E4F77F8CD64BCDC25D84109620 /* CrashReporterAC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28C545F55D31852F8F375927555A8899 /* CrashReporterAC-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E06600BDC0045E97C41E1D4F3815EDDC /* Pods-Crash Reporter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A28B4052F302FCAB4B8A4C531B5D52F /* Pods-Crash Reporter-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0BBFFA21E81C21DD41CBE9DF2CEAD27 /* Pods-Crash Reporter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF5C518D626845F94E95AF42C505D0FC /* Pods-Crash Reporter-dummy.m */; };
+		F55F7B88E2FF57F1845CAA1A9647CAB8 /* Crash Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38241D4758BE2C4C9031D95DB482E6E /* Crash Reporter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6BF6CE7AEE4320012D0A46CEFE8939B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A2C112C2E09F054EA9DDE68985F890E;
+			remoteInfo = CrashReporterAC;
+		};
+		DB75C5C730E577824A5A4AD695964BB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+		F89AF63826B0B0EA19C37A5C30A41CDC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3282A5B2437E609EEB85861D7ECE717;
+			remoteInfo = AppCenter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28C545F55D31852F8F375927555A8899 /* CrashReporterAC-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CrashReporterAC-umbrella.h"; sourceTree = "<group>"; };
+		2C46446A5A625367D81F8EF633C190A0 /* Pods-Crash Reporter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Crash Reporter-resources.sh"; sourceTree = "<group>"; };
+		2CF9F0497A2E6E1860C8640E5BB07822 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenterCrashes.framework; path = "AppCenter-SDK-Apple/macOS/AppCenterCrashes.framework"; sourceTree = "<group>"; };
+		490B835FFB460E22906401067E2AA995 /* Pods-Crash Reporter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Crash Reporter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		508D95CD133C5261EFE3B7D9746CEA14 /* CrashReporterAC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CrashReporterAC.xcconfig; sourceTree = "<group>"; };
+		53169491B2891D89A408E94B484BF04E /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppCenter.framework; path = "AppCenter-SDK-Apple/macOS/AppCenter.framework"; sourceTree = "<group>"; };
+		5B624C5CB9CA4A7A99557F124B68114B /* Pods-Crash Reporter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Crash Reporter.modulemap"; sourceTree = "<group>"; };
+		664B3E7CA3D6B49D65CABC61C4B2F9E0 /* CrashReporterAC-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CrashReporterAC-prefix.pch"; sourceTree = "<group>"; };
+		701DC8D0045AC888A52A5B94B92AEF32 /* CrashReporterAC-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CrashReporterAC-dummy.m"; sourceTree = "<group>"; };
+		779B41CC9194CBC3B5302983EE840348 /* CrashReporterAC.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CrashReporterAC.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7831026B4E3D5C2E42481849B42D85A5 /* Pods-Crash Reporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Crash Reporter.release.xcconfig"; sourceTree = "<group>"; };
+		7DB278ED6437D74B00EC48B4006119A4 /* Crash Reporter View.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = "Crash Reporter View.xib"; path = "Sources/Crash Reporter View.xib"; sourceTree = "<group>"; };
+		857135FAC4504BD84705B425E5474186 /* Pods-Crash Reporter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Crash Reporter-acknowledgements.plist"; sourceTree = "<group>"; };
+		87377BC89BADDF7F18EBFC4A79DA0C38 /* Pods-Crash Reporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Crash Reporter.debug.xcconfig"; sourceTree = "<group>"; };
+		8A28B4052F302FCAB4B8A4C531B5D52F /* Pods-Crash Reporter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Crash Reporter-umbrella.h"; sourceTree = "<group>"; };
+		8D755DAF915A9709489D143501920156 /* libPods-Crash Reporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Crash Reporter.a"; path = "libPods-Crash Reporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		940AE54872FEE319FF6838A79E115BFC /* libCrashReporterAC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCrashReporterAC.a; path = libCrashReporterAC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8FF8A2FA768315502BF33BCE7CD079 /* CrashReporterAC.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CrashReporterAC.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A36CA5063600838B14168EB7DD7F0B39 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A91B45FC0B61771A9E3D9B7492353623 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E38241D4758BE2C4C9031D95DB482E6E /* Crash Reporter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Crash Reporter.swift"; path = "Sources/Crash Reporter.swift"; sourceTree = "<group>"; };
+		FD2D7EEBCBAF186ADE6ECE31EA93E652 /* AppCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppCenter.xcconfig; sourceTree = "<group>"; };
+		FF5C518D626845F94E95AF42C505D0FC /* Pods-Crash Reporter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Crash Reporter-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		23CA4C989FF6215818F16BFDCC8CAC25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C59262CF9E797B8006276F66F3CE6941 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F12621AB0A14EED491650C6AA8F5992 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				779B41CC9194CBC3B5302983EE840348 /* CrashReporterAC.podspec */,
+				A91B45FC0B61771A9E3D9B7492353623 /* LICENSE */,
+				A36CA5063600838B14168EB7DD7F0B39 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		11B0C744BDA5EBF636490D4728D98CB6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7DF8DD889627FEEA26CCBC8E69722F59 /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		2A54763A3C3EB5E4AA15BE5F419AF143 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				48A3B363A08B255DCDB89261B38E4576 /* Pods-Crash Reporter */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		30E72EEE0BD4CF167775419F82EC80D7 /* AppCenter */ = {
+			isa = PBXGroup;
+			children = (
+				11B0C744BDA5EBF636490D4728D98CB6 /* Core */,
+				EA411FF26AA65D9EB0A62E8B5BA6EDFA /* Crashes */,
+				9C03D34E8988B4D797C850C7EDBCAF58 /* Support Files */,
+			);
+			name = AppCenter;
+			path = AppCenter;
+			sourceTree = "<group>";
+		};
+		3D6F901977442AA51EAC5591C1404F24 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D8FF8A2FA768315502BF33BCE7CD079 /* CrashReporterAC.modulemap */,
+				508D95CD133C5261EFE3B7D9746CEA14 /* CrashReporterAC.xcconfig */,
+				701DC8D0045AC888A52A5B94B92AEF32 /* CrashReporterAC-dummy.m */,
+				664B3E7CA3D6B49D65CABC61C4B2F9E0 /* CrashReporterAC-prefix.pch */,
+				28C545F55D31852F8F375927555A8899 /* CrashReporterAC-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Pods/Target Support Files/CrashReporterAC";
+			sourceTree = "<group>";
+		};
+		48A3B363A08B255DCDB89261B38E4576 /* Pods-Crash Reporter */ = {
+			isa = PBXGroup;
+			children = (
+				5B624C5CB9CA4A7A99557F124B68114B /* Pods-Crash Reporter.modulemap */,
+				490B835FFB460E22906401067E2AA995 /* Pods-Crash Reporter-acknowledgements.markdown */,
+				857135FAC4504BD84705B425E5474186 /* Pods-Crash Reporter-acknowledgements.plist */,
+				FF5C518D626845F94E95AF42C505D0FC /* Pods-Crash Reporter-dummy.m */,
+				2C46446A5A625367D81F8EF633C190A0 /* Pods-Crash Reporter-resources.sh */,
+				8A28B4052F302FCAB4B8A4C531B5D52F /* Pods-Crash Reporter-umbrella.h */,
+				87377BC89BADDF7F18EBFC4A79DA0C38 /* Pods-Crash Reporter.debug.xcconfig */,
+				7831026B4E3D5C2E42481849B42D85A5 /* Pods-Crash Reporter.release.xcconfig */,
+			);
+			name = "Pods-Crash Reporter";
+			path = "Target Support Files/Pods-Crash Reporter";
+			sourceTree = "<group>";
+		};
+		4A5E616A75A44FD26124D9F257DEEEF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CF9F0497A2E6E1860C8640E5BB07822 /* AppCenterCrashes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52F354B3FF38FECB4BAD7375754B1935 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				940AE54872FEE319FF6838A79E115BFC /* libCrashReporterAC.a */,
+				8D755DAF915A9709489D143501920156 /* libPods-Crash Reporter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		573EE597EFAE89243CD8D16D857D1FEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30E72EEE0BD4CF167775419F82EC80D7 /* AppCenter */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DF8DD889627FEEA26CCBC8E69722F59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53169491B2891D89A408E94B484BF04E /* AppCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82B3C0223A9B2213DB6116387805D926 /* CrashReporterAC */ = {
+			isa = PBXGroup;
+			children = (
+				E38241D4758BE2C4C9031D95DB482E6E /* Crash Reporter.swift */,
+				0F12621AB0A14EED491650C6AA8F5992 /* Pod */,
+				C0CF8701A390A074AA6B6373AC878092 /* Resources */,
+				3D6F901977442AA51EAC5591C1404F24 /* Support Files */,
+			);
+			name = CrashReporterAC;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		99626740BF5E3CC43CD2A2BC1082006C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82B3C0223A9B2213DB6116387805D926 /* CrashReporterAC */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9C03D34E8988B4D797C850C7EDBCAF58 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD2D7EEBCBAF186ADE6ECE31EA93E652 /* AppCenter.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppCenter";
+			sourceTree = "<group>";
+		};
+		C0CF8701A390A074AA6B6373AC878092 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7DB278ED6437D74B00EC48B4006119A4 /* Crash Reporter View.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				99626740BF5E3CC43CD2A2BC1082006C /* Development Pods */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				573EE597EFAE89243CD8D16D857D1FEF /* Pods */,
+				52F354B3FF38FECB4BAD7375754B1935 /* Products */,
+				2A54763A3C3EB5E4AA15BE5F419AF143 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA411FF26AA65D9EB0A62E8B5BA6EDFA /* Crashes */ = {
+			isa = PBXGroup;
+			children = (
+				4A5E616A75A44FD26124D9F257DEEEF5 /* Frameworks */,
+			);
+			name = Crashes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		033AA5FC9C48CFEE72E7A1BA9E2A06C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E06600BDC0045E97C41E1D4F3815EDDC /* Pods-Crash Reporter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90E9B491784319246CE7FC302ACF248C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2293E4F77F8CD64BCDC25D84109620 /* CrashReporterAC-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4A2C112C2E09F054EA9DDE68985F890E /* CrashReporterAC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46AD19BB5F88AE244A7D1A6C7D254682 /* Build configuration list for PBXNativeTarget "CrashReporterAC" */;
+			buildPhases = (
+				90E9B491784319246CE7FC302ACF248C /* Headers */,
+				9F7618397EBA1B17E4B00F326D1605C2 /* Sources */,
+				23CA4C989FF6215818F16BFDCC8CAC25 /* Frameworks */,
+				A0CBF955C2C8E8A17DA8A57CEC426850 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F7B725EEBFA7047F264D12FBCF43FD3 /* PBXTargetDependency */,
+			);
+			name = CrashReporterAC;
+			productName = CrashReporterAC;
+			productReference = 940AE54872FEE319FF6838A79E115BFC /* libCrashReporterAC.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E35DFE7C08143B96246AC9EF91E0372A /* Pods-Crash Reporter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02F1C9983086B1FAEE75D6F04F105A9B /* Build configuration list for PBXNativeTarget "Pods-Crash Reporter" */;
+			buildPhases = (
+				033AA5FC9C48CFEE72E7A1BA9E2A06C2 /* Headers */,
+				CFB3389EDE0674A77140F3B98973F185 /* Sources */,
+				C59262CF9E797B8006276F66F3CE6941 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CDD3906A4C95CBCD9A46D8DA7A14CA33 /* PBXTargetDependency */,
+				406B3C933A9F4127FD76A065FCFF20BE /* PBXTargetDependency */,
+			);
+			name = "Pods-Crash Reporter";
+			productName = "Pods-Crash Reporter";
+			productReference = 8D755DAF915A9709489D143501920156 /* libPods-Crash Reporter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 52F354B3FF38FECB4BAD7375754B1935 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */,
+				4A2C112C2E09F054EA9DDE68985F890E /* CrashReporterAC */,
+				E35DFE7C08143B96246AC9EF91E0372A /* Pods-Crash Reporter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0CBF955C2C8E8A17DA8A57CEC426850 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/CrashReporterAC/CrashReporterAC.modulemap",
+				"${PODS_ROOT}/Headers/Public/CrashReporterAC/CrashReporterAC-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/CrashReporterAC-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/CrashReporterAC/CrashReporterAC.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/CrashReporterAC/CrashReporterAC-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F7618397EBA1B17E4B00F326D1605C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F55F7B88E2FF57F1845CAA1A9647CAB8 /* Crash Reporter.swift in Sources */,
+				979405BE5B88A0ED1DD5D5A5CB67690A /* CrashReporterAC-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFB3389EDE0674A77140F3B98973F185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0BBFFA21E81C21DD41CBE9DF2CEAD27 /* Pods-Crash Reporter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		406B3C933A9F4127FD76A065FCFF20BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CrashReporterAC;
+			target = 4A2C112C2E09F054EA9DDE68985F890E /* CrashReporterAC */;
+			targetProxy = D6BF6CE7AEE4320012D0A46CEFE8939B /* PBXContainerItemProxy */;
+		};
+		7F7B725EEBFA7047F264D12FBCF43FD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = F89AF63826B0B0EA19C37A5C30A41CDC /* PBXContainerItemProxy */;
+		};
+		CDD3906A4C95CBCD9A46D8DA7A14CA33 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppCenter;
+			target = A3282A5B2437E609EEB85861D7ECE717 /* AppCenter */;
+			targetProxy = DB75C5C730E577824A5A4AD695964BB3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0A4E8437AC7C5E8A6E80920A6EEE3954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		41E5F6696885A6E7869CC26DA8D7C1D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508D95CD133C5261EFE3B7D9746CEA14 /* CrashReporterAC.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/CrashReporterAC/CrashReporterAC-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = Headers/Public/CrashReporterAC/CrashReporterAC.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CrashReporterAC;
+				PRODUCT_NAME = CrashReporterAC;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		509BA78062DC0255519D5A5E389E083F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7831026B4E3D5C2E42481849B42D85A5 /* Pods-Crash Reporter.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5F14B856CAD788D737965259A3024EA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		67EA6253D87A88F86D31070F1217699A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2D7EEBCBAF186ADE6ECE31EA93E652 /* AppCenter.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AE2292F90EFF8EDB76B26D890DD41581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87377BC89BADDF7F18EBFC4A79DA0C38 /* Pods-Crash Reporter.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BBD6B386E20203BA117466ACB2AE3CB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508D95CD133C5261EFE3B7D9746CEA14 /* CrashReporterAC.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/CrashReporterAC/CrashReporterAC-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = Headers/Public/CrashReporterAC/CrashReporterAC.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = CrashReporterAC;
+				PRODUCT_NAME = CrashReporterAC;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA056057BD419BAD4CFD1C4F408058BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD2D7EEBCBAF186ADE6ECE31EA93E652 /* AppCenter.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02F1C9983086B1FAEE75D6F04F105A9B /* Build configuration list for PBXNativeTarget "Pods-Crash Reporter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE2292F90EFF8EDB76B26D890DD41581 /* Debug */,
+				509BA78062DC0255519D5A5E389E083F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46AD19BB5F88AE244A7D1A6C7D254682 /* Build configuration list for PBXNativeTarget "CrashReporterAC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD6B386E20203BA117466ACB2AE3CB1 /* Debug */,
+				41E5F6696885A6E7869CC26DA8D7C1D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F14B856CAD788D737965259A3024EA6 /* Debug */,
+				0A4E8437AC7C5E8A6E80920A6EEE3954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0944D0DEFF9CDF0CBE6D4A41B195020 /* Build configuration list for PBXAggregateTarget "AppCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA056057BD419BAD4CFD1C4F408058BB /* Debug */,
+				67EA6253D87A88F86D31070F1217699A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+module Pods_Crash_Reporter {
+  umbrella header "Pods-Crash Reporter-umbrella.h"
+
+  export *
+  module * { export * }
+}
