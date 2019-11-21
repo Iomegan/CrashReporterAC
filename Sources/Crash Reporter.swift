@@ -22,9 +22,9 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
     /// If `true` we changes to I and in the informative alert text
     var soloDeveloper = false
     
-    override init() {}
+    public override init() {}
     
-    convenience init(helpURL: URL?) {
+    public convenience init(helpURL: URL?) {
         self.init()
         self.helpURL = helpURL
         Bundle.main.loadNibNamed("Crash Reporter View", owner: self, topLevelObjects: nil)
@@ -77,7 +77,7 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
         return crashAlert
     }
     
-    func testCrashAlert() {
+    public func testCrashAlert() {
         let crashAlert = self.crashAlert
         crashAlert.accessoryView = self.crashView
         crashAlert.runModal()

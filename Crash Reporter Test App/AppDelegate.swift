@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import CrashReporterAC
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		955D18D7BDC67249DEBFEEDC /* libPods-Crash Reporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 772960024D2494489DE85569 /* libPods-Crash Reporter.a */; };
 		D1298331238581450059EE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1298330238581450059EE1E /* AppDelegate.swift */; };
 		D1298333238581460059EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1298332238581460059EE1E /* Assets.xcassets */; };
 		D1298336238581460059EE1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1298334238581460059EE1E /* MainMenu.xib */; };
-		D129833F2385815D0059EE1E /* Crash Reporter View.xib in Resources */ = {isa = PBXBuildFile; fileRef = D129833E2385815D0059EE1E /* Crash Reporter View.xib */; };
-		D1298341238581670059EE1E /* Crash Reporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1298340238581670059EE1E /* Crash Reporter.swift */; };
-		F74C255F3240D9B8CD52A424 /* Pods_Crash_Reporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C96F044CC1DBA7C215A04A5 /* Pods_Crash_Reporter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2369FB99AAE1CA1EA1CC5288 /* Pods-Crash Reporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash Reporter.release.xcconfig"; path = "Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter.release.xcconfig"; sourceTree = "<group>"; };
-		7C96F044CC1DBA7C215A04A5 /* Pods_Crash_Reporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Crash_Reporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		772960024D2494489DE85569 /* libPods-Crash Reporter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Crash Reporter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7E1EDCAEC1D955D1B1D1F8F /* Pods-Crash Reporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Crash Reporter.debug.xcconfig"; path = "Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter.debug.xcconfig"; sourceTree = "<group>"; };
 		D129832D238581450059EE1E /* Crash Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crash Reporter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1298330238581450059EE1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,7 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F74C255F3240D9B8CD52A424 /* Pods_Crash_Reporter.framework in Frameworks */,
+				955D18D7BDC67249DEBFEEDC /* libPods-Crash Reporter.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +86,7 @@
 		DF019ED3337CE85D1211E0E7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C96F044CC1DBA7C215A04A5 /* Pods_Crash_Reporter.framework */,
+				772960024D2494489DE85569 /* libPods-Crash Reporter.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,6 +111,7 @@
 				D1298329238581450059EE1E /* Sources */,
 				D129832A238581450059EE1E /* Frameworks */,
 				D129832B238581450059EE1E /* Resources */,
+				CF4A2645986C94ED9A104498 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,7 +161,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1298333238581460059EE1E /* Assets.xcassets in Resources */,
-				D129833F2385815D0059EE1E /* Crash Reporter View.xib in Resources */,
 				D1298336238581460059EE1E /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -192,6 +190,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CF4A2645986C94ED9A104498 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -200,7 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1298331238581450059EE1E /* AppDelegate.swift in Sources */,
-				D1298341238581670059EE1E /* Crash Reporter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
