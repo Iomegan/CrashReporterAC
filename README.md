@@ -12,7 +12,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 ## Requirements
 
 - macOS 10.10
-- Microsoft AppCenter
+- [Microsoft AppCenter](https://appcenter.ms/apps) 
 
 ## Installation
 
