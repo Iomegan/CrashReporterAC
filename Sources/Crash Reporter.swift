@@ -27,7 +27,7 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
     public convenience init(helpURL: URL?) {
         self.init()
         self.helpURL = helpURL
-        Bundle.main.loadNibNamed("Crash Reporter View", owner: self, topLevelObjects: nil)
+        Bundle.main.loadNibNamed(NSNib.Name("Crash Reporter View"), owner: self, topLevelObjects: nil)
     }
     
     var userConfirmationHandler: MSUserConfirmationHandler {
