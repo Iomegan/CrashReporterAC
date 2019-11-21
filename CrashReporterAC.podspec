@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
                        A bug report contains device logs, stack traces, and other diagnostic information to help you find and fix bugs in your app. It should also include user feedback that helps you to reproduce the issue. Unfortunately that's not part of Microsoft's AppCenter implementation for macOS. However there are APIs that allow you to send text attachments with each crash. CrashReporterAC asks the user for feedback and submits it with the crash details to AppCenter.
                        DESC
   s.homepage        = "https://github.com/Iomegan/CrashReporterAC"
-  s.screenshots     = 'https://github.com/Iomegan/CrashReporterAC/blob/master/Screenshot.png'
+  s.screenshots     = 'https://raw.githubusercontent.com/Iomegan/CrashReporterAC/master/Screenshot.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author          = { "Daniel Witt" => "info@witt-software.com" }
   s.social_media_url = 'https://twitter.com/witt_software'
