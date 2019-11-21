@@ -11,7 +11,7 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func showCrashReporterDialog(_ sender: Any) {
-        let crashReporter = CrashReporter(helpURL: URL(string: "https://www.apple.com"))
+        let crashReporter = CrashReporterAC(helpURL: URL(string: "https://www.apple.com"))
         crashReporter.testCrashAlert()
     }
 }

@@ -9,7 +9,7 @@
 import AppCenterCrashes
 import AppKit
 
-class CrashReporter: NSObject, NSAlertDelegate {
+public class CrashReporterAC: NSObject, NSAlertDelegate {
     @IBOutlet var crashView: NSView!
     @IBOutlet var crashNameTextField: NSTextField!
     @IBOutlet var crashEmailAddressTextField: NSTextField!
@@ -83,7 +83,7 @@ class CrashReporter: NSObject, NSAlertDelegate {
         crashAlert.runModal()
     }
     
-    func alertShowHelp(_ alert: NSAlert) -> Bool {
+    public func alertShowHelp(_ alert: NSAlert) -> Bool {
         if let url = self.helpURL {
             if !NSWorkspace.shared.open(url) {
                 NSLog("Unable to open URL \(url)")
