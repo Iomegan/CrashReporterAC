@@ -5,6 +5,13 @@
 [![License](https://img.shields.io/cocoapods/l/CrashReporterAC.svg?style=flat)](https://cocoapods.org/pods/CrashReporterAC)
 [![Platform](https://img.shields.io/cocoapods/p/CrashReporterAC.svg?style=flat)](https://cocoapods.org/pods/CrashReporterAC)
 
+## Description
+A bug report contains device logs, stack traces, and other diagnostic information to help you find and fix bugs in your app. It should also include user feedback that helps you to reproduce the issue. Unfortunately that's not part of [Microsoft' AppCenter](https://appcenter.ms/apps)  implementation for macOS. However there are APIs that allow you to send text attachments with each crash. CrashReporterAC asks the user for feedback and submits it with the crash details to AppCenter.
+
+## Screenshot
+
+![](Screenshot.png)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

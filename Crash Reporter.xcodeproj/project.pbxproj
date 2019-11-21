@@ -26,7 +26,7 @@
 		D1298340238581670059EE1E /* Crash Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crash Reporter.swift"; sourceTree = "<group>"; };
 		D19805F823869867003D6318 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D19805F923869867003D6318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D19805FA2386A27B003D6318 /* CrashReporterAC.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CrashReporterAC.podspec; sourceTree = "<group>"; };
+		D19805FA2386A27B003D6318 /* CrashReporterAC.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CrashReporterAC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
