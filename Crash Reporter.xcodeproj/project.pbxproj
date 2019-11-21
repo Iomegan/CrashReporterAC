@@ -24,9 +24,9 @@
 		D1298337238581460059EE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D129833E2385815D0059EE1E /* Crash Reporter View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Crash Reporter View.xib"; sourceTree = "<group>"; };
 		D1298340238581670059EE1E /* Crash Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crash Reporter.swift"; sourceTree = "<group>"; };
-		D19805F7238695D7003D6318 /* CrashReporter.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CrashReporter.podspec; sourceTree = "<group>"; };
 		D19805F823869867003D6318 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D19805F923869867003D6318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D19805FA2386A27B003D6318 /* CrashReporterAC.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CrashReporterAC.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			children = (
 				D19805F823869867003D6318 /* LICENSE */,
 				D19805F923869867003D6318 /* README.md */,
-				D19805F7238695D7003D6318 /* CrashReporter.podspec */,
+				D19805FA2386A27B003D6318 /* CrashReporterAC.podspec */,
 				D129834423858C400059EE1E /* Sources */,
 				D129832F238581450059EE1E /* Crash Reporter Test App */,
 				D129832E238581450059EE1E /* Products */,
@@ -111,7 +111,7 @@
 				D1298329238581450059EE1E /* Sources */,
 				D129832A238581450059EE1E /* Frameworks */,
 				D129832B238581450059EE1E /* Resources */,
-				CF4A2645986C94ED9A104498 /* [CP] Copy Pods Resources */,
+				55968994E2B72E41BC3A81A6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +168,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		55968994E2B72E41BC3A81A6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AFB5910446BDB7BF796BDA26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,23 +205,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CF4A2645986C94ED9A104498 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
