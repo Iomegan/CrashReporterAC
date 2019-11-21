@@ -11,6 +11,7 @@ A bug report contains device logs, stack traces, and other diagnostic informatio
 ## Screenshot
 
 ![](Screenshot.png)
+![](Screenshot2.png)
 
 ## Example
 
