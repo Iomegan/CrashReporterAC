@@ -14,7 +14,7 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
     @IBOutlet var crashNameTextField: NSTextField!
     @IBOutlet var crashEmailAddressTextField: NSTextField!
     @IBOutlet var crashDescriptionTextFiew: CrashTextView!
-    private var crashUserProvidedDescription: String?
+    public var crashUserProvidedDescription: String?
     /// Useful for privacy statement
     var helpURL: URL?
     /// Uses the localized application application name by default
