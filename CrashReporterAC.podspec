@@ -8,7 +8,9 @@ Pod::Spec.new do |s|
   s.homepage        = "https://github.com/Iomegan/CrashReporterAC"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author          = { "Daniel Witt" => "info@witt-software.com" }
+  s.social_media_url = 'https://twitter.com/witt_software'
   s.platform        = :osx, "10.10"
+  s.osx.deployment_target = "10.10"
   s.source          = { :git => "https://github.com/Iomegan/CrashReporterAC.git", :tag => "0.1.0" }
   s.source_files    = 'Sources/*.{swift}'
   s.resources       = "Sources/*.{xib}"
