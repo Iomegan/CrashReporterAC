@@ -73,6 +73,12 @@ func crashes(_ crashes: MSCrashes!, didSucceedSending errorReport: MSErrorReport
 
 Daniel Witt, info@witt-software.com
 
+## Localization
+
+* Massimiliano Picchi (Italian)
+* Ange Lefrère (French)
+* Daniel Witt (German)
+
 ## License
 
 CrashReporterAC is available under the MIT license. See the LICENSE file for more info.

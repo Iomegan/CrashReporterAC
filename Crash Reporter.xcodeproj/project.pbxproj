@@ -10,7 +10,7 @@
 		955D18D7BDC67249DEBFEEDC /* libPods-Crash Reporter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 772960024D2494489DE85569 /* libPods-Crash Reporter.a */; };
 		D1298331238581450059EE1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1298330238581450059EE1E /* AppDelegate.swift */; };
 		D1298333238581460059EE1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1298332238581460059EE1E /* Assets.xcassets */; };
-		D1298336238581460059EE1E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1298334238581460059EE1E /* MainMenu.xib */; };
+		D1CF5480238D38A100CA2A88 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1298334238581460059EE1E /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,11 +22,20 @@
 		D1298332238581460059EE1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1298335238581460059EE1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D1298337238581460059EE1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D129833E2385815D0059EE1E /* Crash Reporter View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Crash Reporter View.xib"; sourceTree = "<group>"; };
 		D1298340238581670059EE1E /* Crash Reporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Crash Reporter.swift"; sourceTree = "<group>"; };
 		D19805F823869867003D6318 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D19805F923869867003D6318 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D19805FA2386A27B003D6318 /* CrashReporterAC.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = CrashReporterAC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D1CF5483238D3FBA00CA2A88 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/MainMenu.strings; sourceTree = "<group>"; };
+		D1D522B92386D680001F6B47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "Base.lproj/Crash Reporter View.xib"; sourceTree = "<group>"; };
+		D1D522BF2386DBE5001F6B47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D1D522C12386DBEA001F6B47 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D1D522C22386DBEC001F6B47 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D1D522C32386DBEE001F6B47 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D1D522C52386DC02001F6B47 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "en.lproj/Crash Reporter View.strings"; sourceTree = "<group>"; };
+		D1D522C72386DC06001F6B47 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = "fr.lproj/Crash Reporter View.strings"; sourceTree = "<group>"; };
+		D1D522C92386DC09001F6B47 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = "de.lproj/Crash Reporter View.strings"; sourceTree = "<group>"; };
+		D1D522CB2386DC0C001F6B47 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = "it.lproj/Crash Reporter View.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				D1298340238581670059EE1E /* Crash Reporter.swift */,
-				D129833E2385815D0059EE1E /* Crash Reporter View.xib */,
+				D1D522BE2386DBE5001F6B47 /* Localizable.strings */,
+				D1D522B42386D66E001F6B47 /* Crash Reporter View.xib */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -111,7 +121,7 @@
 				D1298329238581450059EE1E /* Sources */,
 				D129832A238581450059EE1E /* Frameworks */,
 				D129832B238581450059EE1E /* Resources */,
-				55968994E2B72E41BC3A81A6 /* [CP] Copy Pods Resources */,
+				F71C80C56FFE8C0399171A33 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +154,9 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				fr,
+				it,
 			);
 			mainGroup = D1298324238581450059EE1E;
 			productRefGroup = D129832E238581450059EE1E /* Products */;
@@ -161,30 +174,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1298333238581460059EE1E /* Assets.xcassets in Resources */,
-				D1298336238581460059EE1E /* MainMenu.xib in Resources */,
+				D1CF5480238D38A100CA2A88 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		55968994E2B72E41BC3A81A6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AFB5910446BDB7BF796BDA26 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +203,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F71C80C56FFE8C0399171A33 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Crash Reporter/Pods-Crash Reporter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -225,8 +238,32 @@
 			isa = PBXVariantGroup;
 			children = (
 				D1298335238581460059EE1E /* Base */,
+				D1CF5483238D3FBA00CA2A88 /* it */,
 			);
 			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		D1D522B42386D66E001F6B47 /* Crash Reporter View.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1D522B92386D680001F6B47 /* Base */,
+				D1D522C52386DC02001F6B47 /* en */,
+				D1D522C72386DC06001F6B47 /* fr */,
+				D1D522C92386DC09001F6B47 /* de */,
+				D1D522CB2386DC0C001F6B47 /* it */,
+			);
+			name = "Crash Reporter View.xib";
+			sourceTree = "<group>";
+		};
+		D1D522BE2386DBE5001F6B47 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1D522BF2386DBE5001F6B47 /* en */,
+				D1D522C12386DBEA001F6B47 /* fr */,
+				D1D522C22386DBEC001F6B47 /* de */,
+				D1D522C32386DBEE001F6B47 /* it */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -236,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -296,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -355,7 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GH2Y99U35Z;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Crash Reporter Test App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -379,7 +418,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = GH2Y99U35Z;
-				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/Crash Reporter Test App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

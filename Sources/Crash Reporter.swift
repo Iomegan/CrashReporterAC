@@ -14,6 +14,9 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
     @IBOutlet var crashNameTextField: NSTextField!
     @IBOutlet var crashEmailAddressTextField: NSTextField!
     @IBOutlet var crashDescriptionTextFiew: CrashTextView!
+   
+    private var resourcesBundle = Bundle(path: Bundle.main.path(forResource: "CrashReporterACResources", ofType: "bundle", inDirectory: nil)!)!
+    
     public var crashUserProvidedDescription: String?
     /// Useful for privacy statement
     var helpURL: URL?
@@ -27,7 +30,10 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
     public convenience init(helpURL: URL?) {
         self.init()
         self.helpURL = helpURL
-        Bundle.main.loadNibNamed(NSNib.Name("Crash Reporter View"), owner: self, topLevelObjects: nil)
+        
+        if resourcesBundle.loadNibNamed(NSNib.Name("Crash Reporter View"), owner: self, topLevelObjects: nil) == false {
+            NSLog("Could not load Crash Reporter View nib")
+        }
     }
     
     public var userConfirmationHandler: MSUserConfirmationHandler {
@@ -41,7 +47,8 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
             }
             else {
                 // TODO: Support multiple crashes. Might not be useful because the user does not know which crash happened when
-                crashAlert.informativeText = self.soloDeveloper ? NSLocalizedString("Do you want to send me a crash report so I can fix the issue?", comment: "") : NSLocalizedString("Do you want to send us a crash report so we can fix the issue?", comment: "")
+                
+                crashAlert.informativeText = self.soloDeveloper ? NSLocalizedString("ALERT_INFO_TEXT_SINGULAR_SHORT", bundle: self.resourcesBundle, comment: "") : NSLocalizedString("ALERT_INFO_TEXT_PLURAL_SHORT", bundle: self.resourcesBundle, comment: "")
             }
             switch crashAlert.runModal() {
                 case .alertFirstButtonReturn:
@@ -65,13 +72,13 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
         self.crashEmailAddressTextField.stringValue = defaults.string(forKey: "CrashEmailAddress") ?? ""
         
         let crashAlert: NSAlert = NSAlert()
-        crashAlert.messageText = String.localizedStringWithFormat(NSLocalizedString("Last time you used %@, it crashed. Sorry about that!", comment: ""), self.appName)
-        crashAlert.informativeText = self.soloDeveloper ? NSLocalizedString("Do you want to send me a crash report so I can fix the issue? If you have the time, please let me know how and when the crash happened.", comment: "") : NSLocalizedString("Do you want to send us a crash report so we can fix the issue? If you have the time, please let us know how and when the crash happened.", comment: "")
-        crashAlert.addButton(withTitle: NSLocalizedString("Send", comment: ""))
-        crashAlert.addButton(withTitle: NSLocalizedString("Don't send", comment: ""))
+        crashAlert.messageText = String.localizedStringWithFormat(NSLocalizedString("ALERT_MSG_TEXT", bundle: self.resourcesBundle, comment: ""), self.appName)
+        crashAlert.informativeText = self.soloDeveloper ? NSLocalizedString("ALERT_INFO_TEXT_SINGULAR", bundle: self.resourcesBundle, comment: "") : NSLocalizedString("ALERT_INFO_TEXT_PLURAL", bundle: self.resourcesBundle, comment: "")
+        crashAlert.addButton(withTitle: NSLocalizedString("SEND", bundle: self.resourcesBundle, comment: ""))
+        crashAlert.addButton(withTitle: NSLocalizedString("DO_NOT_SEND", bundle: self.resourcesBundle, comment: ""))
         crashAlert.alertStyle = .warning
         crashAlert.showsHelp = self.helpURL != nil
-        crashAlert.window.title = NSLocalizedString("Crash Reporter", comment: "")
+        crashAlert.window.title = NSLocalizedString("CRASH_REPORTER_TITLE", bundle: self.resourcesBundle, comment: "")
         crashAlert.delegate = self
         
         return crashAlert
@@ -94,8 +101,12 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
 }
 
 final class CrashTextView: NSTextView {
+    
+    private var resourcesBundle = Bundle(path: Bundle.main.path(forResource: "CrashReporterACResources", ofType: "bundle", inDirectory: nil)!)!
+
     private var placeholderAttributedString: NSAttributedString? {
-        NSAttributedString(string: NSLocalizedString("Please provide any steps necessary to reproduce the issue.", comment: ""), attributes: [NSAttributedString.Key.foregroundColor: NSColor.placeholderTextColor, NSAttributedString.Key.font: systemFont])
+        print(Bundle.main.path(forResource: "CrashReporterACResources", ofType: "bundle", inDirectory: nil)!)
+        return NSAttributedString(string: NSLocalizedString("CRASH_USER_COMMENT_PLACEHOLDER", bundle: resourcesBundle, comment: ""), attributes: [NSAttributedString.Key.foregroundColor: NSColor.placeholderTextColor, NSAttributedString.Key.font: systemFont])
     }
     
     private var placeholderInsets = NSEdgeInsets(top: 0.0, left: 2.0, bottom: 0.0, right: 2.0)
@@ -112,7 +123,7 @@ final class CrashTextView: NSTextView {
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-        
+        print("DRAW: \(string)")
         guard string.isEmpty else { return }
         self.placeholderAttributedString?.draw(in: dirtyRect.insetBy(self.placeholderInsets))
     }

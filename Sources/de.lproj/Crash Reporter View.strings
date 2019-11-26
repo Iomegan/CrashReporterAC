@@ -1,0 +1,5 @@
+/* Class = "NSTextFieldCell"; placeholderString = "EMAIL_PLACEHOLDER_OPTIONAL"; ObjectID = "0w2-i1-hNE"; */
+"0w2-i1-hNE.placeholderString" = "E-Mail-Adresse (optional)";
+
+/* Class = "NSTextFieldCell"; placeholderString = "NAME_PLACEHOLDER_OPTIONAL"; ObjectID = "4Ib-X5-CFN"; */
+"4Ib-X5-CFN.placeholderString" = "Name (optional)";

@@ -1,0 +1,9 @@
+"CRASH_REPORTER_TITLE" = "Rapport d'incident";
+"ALERT_INFO_TEXT_PLURAL" = "Voulez-vous nous envoyer un rapport d'incident pour que nous puissions résoudre le problème ? Si vous avez le temps, faites-nous savoir quand et comment l'accident s'est produit.";
+"ALERT_INFO_TEXT_PLURAL_SHORT" = "Voulez-vous nous envoyer un rapport d'accident pour que nous puissions résoudre le problème ?";
+"ALERT_INFO_TEXT_SINGULAR" = "Voulez-vous m'envoyer un rapport d'accident pour que je puisse résoudre le problème ? Si vous avez le temps, faites-moi savoir quand et comment l'accident s'est produit.";
+"ALERT_INFO_TEXT_SINGULAR_SHORT" = "Voulez-vous m'envoyer un rapport d'accident pour que je puisse résoudre le problème ?";
+"ALERT_MSG_TEXT" = "La dernière fois que vous avez utilisé %@, il y que un plantage. Désolé pour ça !";
+"CRASH_USER_COMMENT_PLACEHOLDER" = "Veuillez indiquer toutes les étapes nécessaires pour reproduire le numéro.";
+"DO_NOT_SEND" = "Ne pas envoyer";
+"SEND" = "Envoyer";

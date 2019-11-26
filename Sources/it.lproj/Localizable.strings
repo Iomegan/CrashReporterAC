@@ -1,0 +1,9 @@
+"CRASH_REPORTER_TITLE" = "Crash Report";
+"ALERT_INFO_TEXT_PLURAL" = "Vuoi inviarci un Crash Report così possiamo risolvere il problema? Se ti è possibile, ci sarebbe molto utile sapere anche come e quando è successo.";
+"ALERT_INFO_TEXT_PLURAL_SHORT" = "Vuoi inviarci un Crash Report così possiamo risolvere il problema?";
+"ALERT_INFO_TEXT_SINGULAR" = "Vuoi inviare un Crash Report così posso risolvere il problema? Se ti è possibile, mi sarebbe molto utile sapere anche come e quando è successo.";
+"ALERT_INFO_TEXT_SINGULAR_SHORT" = "Vuoi inviare un Crash Report così posso risolvere il problema?";
+"ALERT_MSG_TEXT" = "L'ultima volta che hai utilizzato %@, è andato in crash. Ci spiace per questo!";
+"CRASH_USER_COMMENT_PLACEHOLDER" = "Per piacere, indica i passi necessari per riprodurre il problema";
+"DO_NOT_SEND" = "Non inviare";
+"SEND" = "Invia";

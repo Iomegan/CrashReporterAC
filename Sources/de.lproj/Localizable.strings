@@ -1,0 +1,9 @@
+"CRASH_REPORTER_TITLE" = "Absturzbericht";
+"ALERT_INFO_TEXT_PLURAL" = "Möchten Sie uns einen Absturzbericht zukommen lassen? Wenn Sie etwas Zeit haben, lassen Sie uns bitte auch wissen was Sie gemacht haben bevor das Programm abgestürzt ist.";
+"ALERT_INFO_TEXT_PLURAL_SHORT" = "Möchten Sie uns einen Absturzbericht zukommen lassen damit wir das Problem beheben können?";
+"ALERT_INFO_TEXT_SINGULAR" = "Möchten Sie mir einen Absturzbericht zukommen lassen? Wenn Sie etwas Zeit haben, lassen mich bitte auch wissen was Sie gemacht haben bevor das Programm abgestürzt ist.";
+"ALERT_INFO_TEXT_SINGULAR_SHORT" = "Möchten Sie mir einen Absturzbericht zukommen lassen damit ich das Problem beheben kann?";
+"ALERT_MSG_TEXT" = "%@, ist beim letzten Verwenden abgestürzt. Entschuldigung!";
+"CRASH_USER_COMMENT_PLACEHOLDER" = "Bitte geben Sie alle Schritte an die zum Absturz geführt haben.";
+"DO_NOT_SEND" = "Nicht abschicken";
+"SEND" = "Abchicken";

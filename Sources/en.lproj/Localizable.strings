@@ -1,0 +1,9 @@
+"CRASH_REPORTER_TITLE" = "Crash Report";
+"ALERT_INFO_TEXT_PLURAL" = "Do you want to send us a crash report so we can fix the issue? If you have the time, please let us know how and when the crash happened.";
+"ALERT_INFO_TEXT_PLURAL_SHORT" = "Do you want to send us a crash report so we can fix the issue?";
+"ALERT_INFO_TEXT_SINGULAR" = "Do you want to send me a crash report so I can fix the issue? If you have the time, please let me know how and when the crash happened.";
+"ALERT_INFO_TEXT_SINGULAR_SHORT" = "Do you want to send me a crash report so I can fix the issue?";
+"ALERT_MSG_TEXT" = "Last time you used %@, it crashed. Sorry about that!";
+"CRASH_USER_COMMENT_PLACEHOLDER" = "Please provide any steps necessary to reproduce the issue.";
+"DO_NOT_SEND" = "Don't send";
+"SEND" = "Send";
