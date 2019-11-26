@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/witt_software'
   s.platform        = :osx, "10.10"
   s.osx.deployment_target = "10.10"
-  s.source          = { :git => "https://github.com/Iomegan/CrashReporterAC.git", :tag => "0.1.3" }
+  s.source          = { :git => "https://github.com/Iomegan/CrashReporterAC.git", :tag => "0.2.0" }
   s.source_files    = 'Sources/*.{swift}'
   s.resource_bundle = { "CrashReporterACResources" => ["Sources/*.lproj/*.strings", "Sources/*.lproj/*.xib"] }
   s.dependency        'AppCenter/Crashes'
