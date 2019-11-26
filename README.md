@@ -1,6 +1,5 @@
 # CrashReporterAC
 
-[![CI Status](https://img.shields.io/travis/Iomegan/CrashReporterAC.svg?style=flat)](https://travis-ci.org/Iomegan/CrashReporterAC)
 [![Version](https://img.shields.io/cocoapods/v/CrashReporterAC.svg?style=flat)](https://cocoapods.org/pods/CrashReporterAC)
 [![License](https://img.shields.io/cocoapods/l/CrashReporterAC.svg?style=flat)](https://cocoapods.org/pods/CrashReporterAC)
 [![Platform](https://img.shields.io/cocoapods/p/CrashReporterAC.svg?style=flat)](https://cocoapods.org/pods/CrashReporterAC)
