@@ -9,9 +9,18 @@
 import AppCenterCrashes
 import AppKit
 
+class SelectAllTextField: NSTextField {
+    override func mouseDown(with event: NSEvent) {
+        super.mouseDown(with: event)
+        if let textEditor = currentEditor() {
+            textEditor.selectAll(self)
+        }
+    }
+}
+
 public class CrashReporterAC: NSObject, NSAlertDelegate {
     @IBOutlet var crashView: NSView!
-    @IBOutlet var crashNameTextField: NSTextField!
+    @IBOutlet var crashNameTextField: SelectAllTextField!
     @IBOutlet var crashEmailAddressTextField: NSTextField!
     @IBOutlet var crashDescriptionTextFiew: CrashTextView!
    
@@ -105,7 +114,6 @@ final class CrashTextView: NSTextView {
     private var resourcesBundle = Bundle(path: Bundle.main.path(forResource: "CrashReporterACResources", ofType: "bundle", inDirectory: nil)!)!
 
     private var placeholderAttributedString: NSAttributedString? {
-        print(Bundle.main.path(forResource: "CrashReporterACResources", ofType: "bundle", inDirectory: nil)!)
         return NSAttributedString(string: NSLocalizedString("CRASH_USER_COMMENT_PLACEHOLDER", bundle: resourcesBundle, comment: ""), attributes: [NSAttributedString.Key.foregroundColor: NSColor.placeholderTextColor, NSAttributedString.Key.font: systemFont])
     }
     
@@ -123,7 +131,6 @@ final class CrashTextView: NSTextView {
     
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-        print("DRAW: \(string)")
         guard string.isEmpty else { return }
         self.placeholderAttributedString?.draw(in: dirtyRect.insetBy(self.placeholderInsets))
     }

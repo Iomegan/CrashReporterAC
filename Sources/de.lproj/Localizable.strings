@@ -6,4 +6,4 @@
 "ALERT_MSG_TEXT" = "%@, ist beim letzten Verwenden abgestürzt. Entschuldigung!";
 "CRASH_USER_COMMENT_PLACEHOLDER" = "Bitte geben Sie alle Schritte an die zum Absturz geführt haben.";
 "DO_NOT_SEND" = "Nicht abschicken";
-"SEND" = "Abchicken";
+"SEND" = "Abschicken";
