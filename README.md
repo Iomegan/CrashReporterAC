@@ -39,18 +39,18 @@ Make sure to add the following **before** calling `MSAppCenter.start()`, usually
 
 
 ```swift
-MSCrashes.setDelegate(self)
+Crashes.setDelegate(self)
 let crashReporterAC = CrashReporterAC(helpURL: URL(string: "https://example.com/privacy/#app-center"))
-MSCrashes.setUserConfirmationHandler(crashReporterAC.userConfirmationHandler)
+Crashes.setUserConfirmationHandler(crashReporterAC.userConfirmationHandler)
 ```
 
 Also implement the delegates:
 
 
 ```swift
-// MARK: - MSCrashesDelegate
+// MARK: - CrashesDelegate
     
-func attachments(with crashes: MSCrashes, for errorReport: MSErrorReport) -> [MSErrorAttachmentLog] {
+func attachments(with crashes: Crashes, for errorReport: ErrorReport) -> [ErrorAttachmentLog] {
     guard crashReporterAC.crashUserProvidedDescription != nil else {
         return []
     }
@@ -59,11 +59,11 @@ func attachments(with crashes: MSCrashes, for errorReport: MSErrorReport) -> [MS
     return [attachment1! 
 }
     
-func crashes(_ crashes: MSCrashes!, didFailSending errorReport: MSErrorReport!, withError error: Error!) {
-    crashReporterAC.crashUserProvidedDescription = nil 
+func crashes(_ crashes: Crashes, didFailSending errorReport: ErrorReport, withError error: Error) {
+    crashReporterAC.crashUserProvidedDescription = nil
 }
     
-func crashes(_ crashes: MSCrashes!, didSucceedSending errorReport: MSErrorReport!) {
+func crashes(_ crashes: Crashes, didSucceedSending errorReport: ErrorReport) {
     crashReporterAC.crashUserProvidedDescription = nil
 }
 ```
