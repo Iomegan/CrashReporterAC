@@ -39,9 +39,9 @@ Make sure to add the following **before** calling `AppCenter.start()`, usually i
 
 
 ```swift
-Crashes.setDelegate(self)
+Crashes.delegate = self //Call this before AppCenter.start(...)
 let crashReporterAC = CrashReporterAC(helpURL: URL(string: "https://example.com/privacy/#app-center"))
-Crashes.setUserConfirmationHandler(crashReporterAC.userConfirmationHandler)
+Crashes.userConfirmationHandler = crashReporterAC.userConfirmationHandler
 ```
 
 Also implement the delegates:
