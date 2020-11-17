@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17506" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17506"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,8 +21,8 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yCI-2B-nu4">
-                    <rect key="frame" x="242" y="172" width="234" height="21"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="EMAIL_PLACEHOLDER_OPTIONAL" drawsBackground="YES" id="0w2-i1-hNE">
+                    <rect key="frame" x="242" y="173" width="234" height="20"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="border" placeholderString="EMAIL_PLACEHOLDER_OPTIONAL" drawsBackground="YES" id="0w2-i1-hNE">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -32,8 +32,8 @@
                     </connections>
                 </textField>
                 <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tQL-Sa-hZn" customClass="SelectAllTextField" customModule="CrashReporterAC">
-                    <rect key="frame" x="0.0" y="172" width="234" height="21"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="NAME_PLACEHOLDER_OPTIONAL" drawsBackground="YES" id="4Ib-X5-CFN">
+                    <rect key="frame" x="0.0" y="173" width="234" height="20"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="border" placeholderString="NAME_PLACEHOLDER_OPTIONAL" drawsBackground="YES" id="4Ib-X5-CFN">
                         <font key="font" usesAppearanceFont="YES"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -42,18 +42,18 @@
                         <outlet property="nextKeyView" destination="yCI-2B-nu4" id="VAv-E7-7jw"/>
                     </connections>
                 </textField>
-                <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toz-VD-mS1">
-                    <rect key="frame" x="0.0" y="0.0" width="476" height="164"/>
+                <scrollView borderType="line" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Toz-VD-mS1">
+                    <rect key="frame" x="0.0" y="0.0" width="476" height="165"/>
                     <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="1x7-DX-xAE">
-                        <rect key="frame" x="1" y="1" width="474" height="162"/>
+                        <rect key="frame" x="1" y="1" width="474" height="163"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" findStyle="bar" spellingCorrection="YES" smartInsertDelete="YES" id="VhR-Ob-1w1" customClass="CrashTextView" customModule="CrashReporterAC">
-                                <rect key="frame" x="0.0" y="0.0" width="474" height="162"/>
+                                <rect key="frame" x="0.0" y="0.0" width="474" height="163"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                <size key="minSize" width="474" height="162"/>
+                                <size key="minSize" width="474" height="163"/>
                                 <size key="maxSize" width="476" height="10000000"/>
                                 <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             </textView>
@@ -64,7 +64,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                     <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="vnR-nR-azZ">
-                        <rect key="frame" x="459" y="1" width="16" height="162"/>
+                        <rect key="frame" x="459" y="1" width="16" height="163"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </scroller>
                 </scrollView>

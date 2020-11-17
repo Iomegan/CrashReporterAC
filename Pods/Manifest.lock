@@ -1,8 +1,8 @@
 PODS:
-  - AppCenter/Core (2.5.1)
-  - AppCenter/Crashes (2.5.1):
+  - AppCenter/Core (4.0.0)
+  - AppCenter/Crashes (4.0.0):
     - AppCenter/Core
-  - CrashReporterAC (0.2.0):
+  - CrashReporterAC (0.2.2):
     - AppCenter/Crashes
 
 DEPENDENCIES:
@@ -18,9 +18,9 @@ EXTERNAL SOURCES:
     :path: "../Crash Reporter"
 
 SPEC CHECKSUMS:
-  AppCenter: fddcbac6e4baae3d93a196ceb0bfe0e4ce407dec
-  CrashReporterAC: f8b6938a5bb6a67f7a5e2a0bbdc378b73816ff75
+  AppCenter: 51351e0121e40ba75e28ecb7de5c2e69d480df5e
+  CrashReporterAC: 9d0b38dc5d905f18cac671ca2929803f6d3d1451
 
-PODFILE CHECKSUM: 0aa2c3d2d5cb2998ec25c016a3eee769ea5cef2e
+PODFILE CHECKSUM: d72ecb50374b2927086ebb04530a93ac95ca959d
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0

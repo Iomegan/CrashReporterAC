@@ -45,8 +45,8 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
         }
     }
     
-    public var userConfirmationHandler: MSUserConfirmationHandler {
-        return { (errorReports: [MSErrorReport]) in
+    public var userConfirmationHandler: UserConfirmationHandler {
+        return { (errorReports: [ErrorReport]) in
             
             let defaults = UserDefaults.standard
             let crashAlert = self.crashAlert
@@ -64,9 +64,9 @@ public class CrashReporterAC: NSObject, NSAlertDelegate {
                     defaults.set(self.crashNameTextField.stringValue, forKey: "CrashUserName")
                     defaults.set(self.crashEmailAddressTextField.stringValue, forKey: "CrashEmailAddress")
                     self.crashUserProvidedDescription = "Name: \(self.crashNameTextField.stringValue)\n\nEmail Address: \(self.crashEmailAddressTextField.stringValue)\n\nDescription: \(self.crashDescriptionTextFiew.string)\n\n"
-                    MSCrashes.notify(with: .send)
+                    Crashes.notify(with: .send)
                 case .alertSecondButtonReturn:
-                    MSCrashes.notify(with: .dontSend)
+                    Crashes.notify(with: .dontSend)
                 default:
                     break
             }
