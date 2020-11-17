@@ -35,7 +35,7 @@ Add this to your AppDelegate:
 private let crashReporterAC = CrashReporterAC(helpURL: URL(string: "https://example.com/privacy/#app-center"))
 ```
 
-Make sure to add the following **before** calling `MSAppCenter.start()`, usually in `applicationDidFinishLaunching(_:)`:
+Make sure to add the following **before** calling `AppCenter.start()`, usually in `applicationDidFinishLaunching(_:)`:
 
 
 ```swift
@@ -55,7 +55,7 @@ func attachments(with crashes: Crashes, for errorReport: ErrorReport) -> [ErrorA
         return []
     }
 
-    let attachment1 = MSErrorAttachmentLog.attachment(withText: crashReporterAC.crashUserProvidedDescription!, filename: "UserProvidedDescription.txt")
+    let attachment1 = ErrorAttachmentLog.attachment(withText: crashReporterAC.crashUserProvidedDescription!, filename: "UserProvidedDescription.txt")
     return [attachment1! 
 }
     
